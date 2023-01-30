@@ -17,3 +17,10 @@
     width: 100%;
     background-color: rgb(12, 75, 193);
 }
+.result{
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: aliceblue;
+
+}

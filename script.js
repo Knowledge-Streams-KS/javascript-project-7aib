@@ -7,8 +7,8 @@ const mv_data = async () => {
   );
 
   const data = await resp.json();
-  //   console.log(data);
-  //   console.log(data["Search"]);
+    console.log(data);
+    console.log(data["Search"]);
 
   const movieList = data["Search"];
   //   console.log(movieList)
@@ -18,7 +18,24 @@ const mv_data = async () => {
     }
   });
   console.log(filter);
+
+  // if (filter != "") {
+  //   const show = filter;
+  //   filter.map(addmovies);
+  // } else {
+  //   const show = data.Search;
+  //   filter.map(addmovies);
+  // }
 };
 
 document.getElementById("btn").addEventListener("click", mv_data);
 
+// addmovies = (data) => {
+//   var show_movies = document.getElementById("res");
+//   const m_detail = `<div class="frame">
+//     <img src="${data.Poster}" alt="image" class="image" />
+//     <h1>${data.Title}</h1>
+//     <h3>${data.Year}</h3>
+//     </div>`;
+// };
+// show_movies.insertAdjacentHTML("afterbegin", m_detail);
